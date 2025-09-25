@@ -1,0 +1,11 @@
+# Redirigir todas las rutas a index.html para SPA
+/*    /index.html   200
+
+# Redirecciones específicas para páginas individuales
+/pan-dulce-tradicional    /pan-dulce-tradicional.html    200
+/pasteleria-fina         /pasteleria-fina.html           200
+/bebidas-acompanamientos /bebidas-acompanamientos.html   200
+/especiales-temporada    /especiales-temporada.html      200
+/sobre-nosotros         /sobre-nosotros.html            200
+/panes-artesanales      /panes-artesanales.html         200
+/cookies                /cookies.html                   200

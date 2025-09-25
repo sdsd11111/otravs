@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - El Dicho Panadería</title>
+    <meta name="description" content="Descubre la historia de El Dicho Panadería, donde la tradición y el sabor se unen para ofrecerte los mejores panes y postres artesanales.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        /* Estilos para el Hero de Pantalla Completa */
+        .fullscreen-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+        }
+        .fullscreen-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+        .fullscreen-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .fullscreen-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .fullscreen-hero p {
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.2rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        /* Estilos para el resto del contenido */
+        .content-section {
+             padding: 5rem 1rem;
+        }
+        .history-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .history-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .history-content p {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin-top: 3rem;
+            border-left: 3px solid var(--primary-color);
+        }
+        .timeline li {
+            padding-left: 2rem;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            left: -11px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: 3px solid var(--background-light);
+        }
+        .timeline strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            display: block;
+        }
+        .video-section {
+            text-align: center;
+            background-color: var(--background-light);
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 1000px;
+            margin: 2rem auto 0 auto;
+            box-shadow: 0 10px 30px var(--shadow-medium);
+            border-radius: var(--border-radius);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header-container"></header>
+
+    <main>
+        <section class="fullscreen-hero" style="background-image: url('/images/Nosotros/hero.jpg');">
+            <div class="container">
+                <h1>El Dicho Panadería — Tradición y Sabor desde 1985</h1>
+                <p>Por más de tres décadas hemos endulzado los momentos especiales de las familias con nuestros panes y postres artesanales, elaborados con ingredientes de la más alta calidad y recetas tradicionales transmitidas de generación en generación.</p>
+                <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20hacer%20un%20pedido%20o%20consultar%20sobre%20sus%20productos" class="cta-btn" target="_blank">Haz tu pedido ahora</a>
+            </div>
+        </section>
+
+        <section class="content-section history-section">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <div class="history-content">
+                    <p>El Dicho Panadería nació en 1985 como un pequeño negocio familiar en el corazón de la ciudad. Lo que comenzó como un modesto horno de leña y unas cuantas recetas heredadas, se ha convertido con el tiempo en un referente de calidad y tradición panadera. Nuestro secreto ha sido siempre el mismo: ingredientes naturales, procesos artesanales y un toque de amor en cada preparación.</p>
+                    
+                    <p>Hoy, con más de 35 años de experiencia, continuamos horneando cada día con la misma pasión del primer día, ofreciendo a nuestros clientes productos frescos, deliciosos y hechos con dedicación. Nuestro compromiso es mantener viva la tradición panadera mientras innovamos con nuevos sabores que sorprendan a tu paladar.</p>
+                    
+                    <ul class="timeline">
+                        <li><strong>1985</strong> — Apertura de la primera panadería en el centro de la ciudad, con un pequeño horno de leña y recetas familiares.</li>
+                        <li><strong>1995</strong> — Expansión a un local más grande para satisfacer la creciente demanda de nuestros clientes.</li>
+                        <li><strong>2005</strong> — Introducción de nuevas líneas de productos, incluyendo pastelería fina y panes especiales.</li>
+                        <li><strong>Actualidad</strong> — Más de 35 años endulzando momentos especiales, con tres sucursales y una amplia variedad de productos artesanales.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section video-section">
+            <div class="container">
+                <h2>Conoce Nuestro Proceso Artesanal</h2>
+                <p style="text-align: center; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">Descubre cómo elaboramos nuestros productos con técnicas tradicionales y los mejores ingredientes. Cada pieza es hecha a mano con dedicación y cuidado para ofrecerte la mejor calidad en cada bocado.</p>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/oCPElo_QJx4" title="El proceso artesanal de El Dicho Panadería" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer-container"></footer>
+
+    <script>
+        // Función para cargar componentes
+        async function loadComponent(componentPath, targetElementId) {
+            const targetElement = document.getElementById(targetElementId);
+            if (!targetElement) {
+                console.error(`Elemento con ID '${targetElementId}' no encontrado`);
+                return;
+            }
+
+            try {
+                const path = componentPath.startsWith('/') ? componentPath : `/${componentPath}`;
+                const response = await fetch(path);
+                
+                if (!response.ok) {
+                    throw new Error(`Error al cargar el componente: ${componentPath}`);
+                }
+                
+                const html = await response.text();
+                targetElement.innerHTML = html;
+                
+                // Ejecutar scripts dentro del componente
+                const scripts = targetElement.getElementsByTagName('script');
+                for (const script of scripts) {
+                    if (script.src) {
+                        const newScript = document.createElement('script');
+                        newScript.src = script.src.startsWith('http') ? script.src : `/${script.src}`;
+                        document.body.appendChild(newScript);
+                    } else {
+                        try {
+                            new Function(script.text)();
+                        } catch (e) {
+                            console.error('Error ejecutando script:', e);
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error(`Error cargando el componente '${componentPath}':`, error);
+            }
+        }
+
+        // Inicialización de la página
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                // Cargar componentes
+                await Promise.all([
+                    loadComponent('components/header.html', 'header-container'),
+                    loadComponent('components/footer.html', 'footer-container')
+                ]);
+                
+                // Cargar script principal
+                const mainScript = document.createElement('script');
+                mainScript.src = '/js/script.js';
+                document.body.appendChild(mainScript);
+            } catch (error) {
+                console.error('Error al cargar componentes:', error);
+            }
+        });
+    </script>
+</body>
+</html>

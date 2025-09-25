@@ -1,0 +1,10 @@
+{
+  "name": "el-dicho-panaderia",
+  "version": "1.0.0",
+  "description": "Sitio web de El Dicho Panadería",
+  "scripts": {
+    "build": "echo 'Build script ejecutado'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

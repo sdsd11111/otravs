@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies - Confecciones Arévalo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .legal-content { padding: 8rem 1rem 4rem 1rem; max-width: 900px; margin: 0 auto; line-height: 1.8; }
+        .legal-content h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 2rem; }
+        .legal-content h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-top: 3rem; margin-bottom: 1rem; }
+        .legal-content p, .legal-content ul { margin-bottom: 1.5rem; }
+        .legal-content ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <header class="header" id="header-container"></header>
+
+    <main>
+        <div class="legal-content">
+            <h1>Política de Cookies</h1>
+            <p><strong>Última actualización:</strong> 21 de septiembre de 2025</p>
+
+            <h2>¿Qué son las cookies?</h2>
+            <p>Una cookie es un pequeño archivo de texto que un sitio web guarda en su computadora o dispositivo móvil cuando visita el sitio. Permite que el sitio web recuerde sus acciones y preferencias (como inicio de sesión, idioma, tamaño de fuente y otras preferencias de visualización) durante un período de tiempo, para que no tenga que volver a ingresarlas cada vez que regrese al sitio o navegue de una página a otra.</p>
+
+            <h2>Cómo usamos las cookies</h2>
+            <p>Utilizamos cookies para varios propósitos, que incluyen:</p>
+            <ul>
+                <li><strong>Cookies esenciales:</strong> Algunas cookies son esenciales para que pueda experimentar la funcionalidad completa de nuestro sitio. Nos permiten mantener las sesiones de los usuarios y prevenir cualquier amenaza de seguridad. No recopilan ni almacenan ninguna información personal.</li>
+                <li><strong>Cookies de análisis:</strong> Estas cookies almacenan información como el número de visitantes del sitio web, el número de visitantes únicos, qué páginas del sitio web se han visitado, la fuente de la visita, etc. Estos datos nos ayudan a comprender y analizar qué tan bien funciona el sitio web y dónde necesita mejorar.</li>
+                <li><strong>Cookies de funcionalidad:</strong> Estas son las cookies que ayudan a ciertas funcionalidades no esenciales en nuestro sitio web. Estas funcionalidades incluyen incrustar contenido como videos o compartir contenido del sitio web en plataformas de redes sociales.</li>
+            </ul>
+
+            <h2>Cómo controlar las cookies</h2>
+            <p>Puede controlar y/o eliminar las cookies como lo desee; para obtener más detalles, consulte aboutcookies.org. Puede eliminar todas las cookies que ya están en su computadora y puede configurar la mayoría de los navegadores para evitar que se coloquen. Sin embargo, si hace esto, es posible que deba ajustar manualmente algunas preferencias cada vez que visite un sitio y que algunos servicios y funcionalidades no funcionen.</p>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer-container"></footer>
+
+    <script src="js/component-loader.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadComponent('header.html', 'header-container');
+            await loadComponent('footer.html', 'footer-container');
+            const mainScript = document.createElement('script');
+            mainScript.src = 'js/script.js';
+            document.body.appendChild(mainScript);
+        });
+    </script>
+</body>
+</html>

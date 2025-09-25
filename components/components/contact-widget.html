@@ -1,0 +1,41 @@
+<!-- Botón de la pestaña lateral -->
+<div id="contact-widget-tab" class="contact-widget-tab" role="button" tabindex="0" aria-expanded="false" aria-controls="contact-widget-panel">
+    <i class="fas fa-envelope"></i>
+</div>
+
+<!-- Panel deslizable -->
+<div id="contact-widget-panel" class="contact-widget-panel" aria-hidden="true">
+    <button id="contact-widget-close" class="contact-widget-close" aria-label="Cerrar panel de contacto">&times;</button>
+    
+    <div class="contact-widget-content">
+        <h3 class="widget-title">Contacto Rápido</h3>
+        
+        <div class="widget-section">
+            <a href="tel:+593996976759" class="widget-link">
+                <i class="fas fa-phone-alt"></i>
+                <span>Llamar ahora</span>
+            </a>
+            <a href="mailto:contacto@confeccionesarevalo.com" class="widget-link">
+                <i class="fas fa-envelope"></i>
+                <span>Enviar correo</span>
+            </a>
+            <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20reservar%20un%20turno" target="_blank" class="widget-button">
+                Reserva un Turno
+            </a>
+        </div>
+        
+        <div class="widget-section">
+            <p class="widget-subtitle">Suscríbete a nuestro boletín</p>
+            <!-- NOTA: Este formulario está preparado para Formspree. Reemplaza la URL con tu propio endpoint. -->
+            <form id="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="widget-form">
+                <input type="email" name="email" placeholder="Tu correo electrónico" required class="widget-input">
+                <button type="submit" class="widget-submit">Suscribirse</button>
+            </form>
+        </div>
+        
+        <div class="widget-footer">
+            <a href="#">Nuestras Tiendas</a>
+            <a href="#">Preguntas Frecuentes</a>
+        </div>
+    </div>
+</div>

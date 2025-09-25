@@ -1,0 +1,40 @@
+{
+  "pageTitle": "Pan Dulce Tradicional - El Dicho Panadería",
+  "metaDescription": "Descubre nuestra selección de pan dulce tradicional mexicano. Conchas, cuernitos, orejas y más, elaborados con recetas tradicionales y mucho sabor.",
+  "hero": {
+    "title": "Pan Dulce Tradicional Mexicano",
+    "subtitle": "Los sabores de siempre, hechos con el cariño de siempre.",
+    "backgroundImage": "/images/pan-dulce/hero.jpg"
+  },
+  "details": {
+    "mainImage": "/images/pan-dulce/pan-dulce-1.jpg",
+    "thumbnails": [
+      "/images/pan-dulce/pan-dulce-1.jpg",
+      "/images/pan-dulce/pan-dulce-2.jpg",
+      "/images/pan-dulce/pan-dulce-3.jpg"
+    ],
+    "title": "La Tradición en Cada Mordida",
+    "paragraphs": [
+      "Nuestro pan dulce tradicional es elaborado siguiendo recetas que han pasado de generación en generación, utilizando ingredientes de la más alta calidad y técnicas artesanales que garantizan un sabor auténtico e inigualable.",
+      "Desde las clásicas conchas hasta los esponjosos cuernitos, cada pieza es horneada diariamente para ofrecerte la máxima frescura y sabor que solo una panadería tradicional puede ofrecer."
+    ],
+    "ctaText": "Hola, me interesa hacer un pedido de Pan Dulce Tradicional."
+  },
+  "features": [
+    {
+      "icon": "fas fa-bread-slice",
+      "title": "Recetas Tradicionales",
+      "description": "Mantenemos vivas las recetas tradicionales que han endulzado generaciones enteras, con el mismo sabor de siempre."
+    },
+    {
+      "icon": "fas fa-utensils",
+      "title": "Variedad Clásica",
+      "description": "Ofrecemos una amplia selección de panes dulces tradicionales, desde las clásicas conchas hasta delicias menos conocidas."
+    },
+    {
+      "icon": "fas fa-home",
+      "title": "Horneado Diario",
+      "description": "Preparamos nuestro pan dulce varias veces al día para garantizar que siempre lo disfrutes recién horneado."
+    }
+  ]
+}

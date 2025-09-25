@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confecciones Arévalo</title> <!-- Título genérico, será reemplazado por JS -->
+    <meta name="description" content=""> <!-- Descripción genérica, será reemplazada por JS -->
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/producto.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header (cargado dinámicamente) -->
+    <header class="header" id="header-container"></header>
+
+    <main>
+        <!-- Hero Section (contenido llenado por JS) -->
+        <section class="product-hero">
+            <div class="product-hero-overlay"></div>
+            <div class="container">
+                <h1 class="product-title"></h1>
+                <p class="product-subtitle"></p>
+                <a href="#" class="hero-cta" target="_blank">
+                    <i class="fas fa-calendar-check"></i>
+                    Agendar una Cita
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección de Detalles del Producto (contenido llenado por JS) -->
+        <section class="product-details">
+            <div class="container">
+                <div class="product-gallery">
+                    <img src="" alt="Imagen principal del producto" class="main-image" id="main-product-image">
+                    <div class="thumbnail-images">
+                        <!-- Thumbnails generados por JS -->
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h2></h2>
+                    <p></p> <!-- Contenedor para párrafos generados por JS -->
+                    <a href="#" class="cta-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Solicitar Asesoría
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Características y Ventajas (contenido llenado por JS) -->
+        <section class="product-features">
+            <div class="container">
+                <h2>Detalles que Marcan la Diferencia</h2>
+                <div class="features-grid">
+                    <!-- Características generadas por JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios (cargada dinámicamente) -->
+        <section class="testimonials" id="testimonios-container"></section>
+
+        <!-- Sección de Contacto (cargada dinámicamente) -->
+        <section class="contacto" id="contacto-container"></section>
+
+    </main>
+
+    <!-- Footer (cargado dinámicamente) -->
+    <footer class="footer" id="footer-container"></footer>
+
+    <!-- Scripts -->
+    <script src="js/component-loader.js"></script>
+    <script src="js/content-renderer.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            // Cargar todos los componentes HTML reutilizables
+            await Promise.all([
+                loadComponent('header.html', 'header-container'),
+                loadComponent('footer.html', 'footer-container'),
+                loadComponent('testimonios.html', 'testimonios-container'),
+                loadComponent('formulario_contacto.html', 'contacto-container')
+            ]);
+
+            // Una vez cargados los componentes, renderizar el contenido específico de la página
+            await renderPageContent();
+
+            // Cargar el script principal que maneja la interactividad general (menú, sliders, etc.)
+            const mainScript = document.createElement('script');
+            mainScript.src = 'js/script.js';
+            document.body.appendChild(mainScript);
+
+            // Lógica para la galería de la página de producto (se debe re-adjuntar después del render)
+            const mainImage = document.getElementById('main-product-image');
+            const thumbnailsContainer = document.querySelector('.thumbnail-images');
+            thumbnailsContainer.addEventListener('click', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    mainImage.src = e.target.src;
+                    // Actualizar la clase activa
+                    thumbnailsContainer.querySelectorAll('img').forEach(t => t.classList.remove('active'));
+                    e.target.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

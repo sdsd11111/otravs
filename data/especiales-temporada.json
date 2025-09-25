@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Especiales de Temporada - El Dicho Panadería",
+  "metaDescription": "Descubre nuestras creaciones especiales de temporada. Desde el pan de muerto hasta la rosca de reyes, celebramos las tradiciones con sabores inolvidables.",
+  "hero": {
+    "title": "Sabores que Marcan el Calendario",
+    "subtitle": "Celebra cada temporada con nuestras especialidades únicas que honran las tradiciones mexicanas.",
+    "backgroundImage": "/images/Especiales/hero.jpg"
+  },
+  "details": {
+    "mainImage": "/images/Especiales/pan especial 1.jpg",
+    "thumbnails": [
+      "/images/Especiales/pan especial 1.jpg",
+      "/images/Especiales/pan especial 2.jpg",
+      "/images/Especiales/pan especial 3.jpg",
+      "/images/Especiales/pan especial 4.jpg",
+      "/images/Especiales/pan especial 5.jpg"
+    ],
+    "title": "Tradición en Cada Temporada",
+    "paragraphs": [
+      "En El Dicho Panadería, honramos las tradiciones mexicanas con una selección de productos especiales que marcan las diferentes épocas del año. Cada temporada trae consigo sabores únicos que esperamos con ansias durante todo el año.",
+      "Desde el inconfundible pan de muerto en noviembre hasta la tradicional rosca de reyes en enero, nuestras creaciones especiales están hechas con las mismas recetas tradicionales que han endulzado generaciones, utilizando ingredientes de la más alta calidad."
+    ],
+    "ctaText": "Hola, me interesa saber más sobre sus Especiales de Temporada y hacer un pedido."
+  },
+  "features": [
+    {
+      "icon": "fas fa-calendar-alt",
+      "title": "Calendario de Temporada",
+      "description": "Seguimos el calendario tradicional para ofrecer cada especialidad en su momento justo, respetando las fechas y tradiciones."
+    },
+    {
+      "icon": "fas fa-heart",
+      "title": "Recetas con Historia",
+      "description": "Cada producto especial está elaborado siguiendo recetas tradicionales que han pasado de generación en generación."
+    },
+    {
+      "icon": "fas fa-star",
+      "title": "Ingredientes de Calidad",
+      "description": "Utilizamos solo los mejores ingredientes para garantizar que cada bocado sea una experiencia memorable."
+    }
+  ]
+}

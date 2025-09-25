@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base href="/" id="base-href" />
+    <script>
+      // Asegurarse de que la etiqueta base tenga la URL correcta en producción
+      document.addEventListener('DOMContentLoaded', function() {
+        const base = document.getElementById('base-href');
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+          // En producción, asegurarse de que la URL base sea absoluta
+          const baseUrl = window.location.protocol + '//' + window.location.host + '/';
+          if (base.getAttribute('href') !== baseUrl) {
+            base.setAttribute('href', baseUrl);
+            console.log('URL base actualizada a:', baseUrl);
+          }
+        }
+      });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Dicho - Panadería Artesanal con Tradición</title>
+    <meta name="description" content="El Dicho, tu panadería de confianza donde cada producto es elaborado con ingredientes naturales y recetas tradicionales. Pan fresco, pasteles y delicias horneadas diariamente.">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/contact-widget.css">
+    <!-- Added favicon and Open Graph meta tags -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Confecciones Arevalo">
+    <meta property="og:description" content="Bienvenido a Confecciones Arevalo, disfruta nuestro servicio.">
+    <meta property="og:image" content="images/Imagen destacada.jpg">
+    <meta property="og:url" content="https://www.confeccionesarevalo.com">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header Fijo (cargado dinámicamente) -->
+    <header class="header" id="header-container"></header>
+
+    <!-- Sección Hero (background full-screen con overlay 50%) -->
+    <section class="hero hero-bg" id="inicio" role="img" aria-label="Panadería El Dicho" style="background-image: url('images/Inicio/Hero.jpg');">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title">El Sabor de lo Auténtico</h1>
+                <p class="hero-subtitle">Panadería artesanal con recetas tradicionales y el mejor sabor de siempre</p>
+                <p class="hero-motto">Endulzando a 3 Generaciones Dice Más que Mil Palabras</p>
+                <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20agendar%20una%20llamada%20para%20conocer%20más%20sobre%20sus%20servicios" class="hero-cta" target="_blank">
+                    <i class="fas fa-bread-slice"></i>
+                    Haz tu pedido ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Productos</h2>
+                <p class="section-subtitle">Cada pieza es única, diseñada especialmente para ti</p>
+            </div>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="panes">Panes</button>
+                <button class="tab-btn" data-category="pasteles">Pasteles</button>
+                <button class="tab-btn" data-category="reposteria">Repostería</button>
+                <button class="tab-btn" data-category="bebidas">Bebidas</button>
+                <button class="tab-btn" data-category="especiales">Especiales</button>
+            </div>
+            
+            <div class="category-content">
+                <!-- Panes -->
+                <div class="category-panel active" id="panes">
+                    <div class="category-info">
+                        <div class="category-text">
+                            <h3>Panes Artesanales</h3>
+                            <p>Elaborados con ingredientes naturales y masa madre, nuestros panes son el resultado de un proceso de fermentación lenta que realza su sabor y textura. Disfruta de una amplia variedad de panes recién horneados cada mañana.</p>
+                            <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20panes%20artesanales" class="category-cta" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Consultar Panes
+                            </a>
+                        </div>
+                        <div class="category-slider">
+                            <div class="product-swiper" data-swiper-folder="panes"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pasteles -->
+                <div class="category-panel" id="pasteles">
+                    <div class="category-info">
+                        <div class="category-text">
+                            <h3>Pasteles y Tortas</h3>
+                            <p>Deliciosos pasteles caseros elaborados con los mejores ingredientes. Desde clásicos hasta creaciones exclusivas, cada pastel es una experiencia única de sabor que endulzará tus momentos especiales.</p>
+                            <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20pasteles" class="category-cta" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Consultar Pasteles
+                            </a>
+                        </div>
+                        <div class="category-slider">
+                            <div class="product-swiper" data-swiper-folder="pasteles"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repostería -->
+                <div class="category-panel" id="reposteria">
+                    <div class="category-info">
+                        <div class="category-text">
+                            <h3>Repostería Fina</h3>
+                            <p>Una selección exquisita de postres y dulces artesanales. Galletas, brownies, muffins y más, preparados con ingredientes de primera calidad y mucho cariño para endulzar tu día.</p>
+                            <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20la%20repostería" class="category-cta" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Consultar Repostería
+                            </a>
+                        </div>
+                        <div class="category-slider">
+                            <div class="product-swiper" data-swiper-folder="reposteria"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="category-panel" id="bebidas">
+                    <div class="category-info">
+                        <div class="category-text">
+                            <h3>Bebidas Artesanales</h3>
+                            <p>Acompaña tus productos favoritos con nuestras bebidas artesanales. Desde cafés de especialidad hasta jugos naturales y bebidas frías, el complemento perfecto para tu merienda.</p>
+                            <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20las%20bebidas" class="category-cta" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Consultar Bebidas
+                            </a>
+                        </div>
+                        <div class="category-slider">
+                            <div class="product-swiper" data-swiper-folder="bebidas"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Especiales -->
+                <div class="category-panel" id="especiales">
+                    <div class="category-info">
+                        <div class="category-text">
+                            <h3>Especiales de la Casa</h3>
+                            <p>Descubre nuestras creaciones exclusivas y productos de temporada. Cada mes preparamos especiales únicos que resaltan los sabores de la estación y las festividades del momento.</p>
+                            <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20conocer%20los%20especiales%20del%20mes" class="category-cta" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Ver Especiales
+                            </a>
+                        </div>
+                        <div class="category-slider">
+                            <div class="product-swiper" data-swiper-folder="especiales"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Swiper & GLightbox CDN (used to create sliders and lightbox) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Sección de Testimonios (cargada dinámicamente) -->
+    <section class="testimonials" id="testimonios-container"></section>
+
+    <!-- Sección del Proceso -->
+    <section class="process" id="proceso">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Proceso Artesanal</h2>
+                <p class="section-subtitle">3 pasos para crear productos de la más alta calidad</p>
+            </div>
+            
+            <div class="process-tabs">
+                <button class="process-tab active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-title">Selección</span>
+                </button>
+                <button class="process-tab" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-title">Elaboración</span>
+                </button>
+                <button class="process-tab" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-title">Horneado</span>
+                </button>
+            </div>
+            
+            <div class="process-content">
+                <div class="process-step active" id="step-1">
+                    <div class="step-info">
+                        <div class="step-text">
+                            <h3>Selección de Ingredientes</h3>
+                            <p>Utilizamos solo los ingredientes más frescos y de la más alta calidad. Nuestros proveedores son cuidadosamente seleccionados para garantizar que cada producto que llega a tu mesa cumpla con nuestros estándares de excelencia. Harinas orgánicas, frutas frescas de temporada y productos locales son la base de nuestras recetas.</p>
+                            <ul class="step-features">
+                                <li><i class="fas fa-check"></i> Ingredientes 100% naturales</li>
+                                <li><i class="fas fa-check"></i> Proveedores locales certificados</li>
+                                <li><i class="fas fa-check"></i> Control de calidad riguroso</li>
+                                <li><i class="fas fa-check"></i> Productos de temporada</li>
+                            </ul>
+                        </div>
+                        <div class="step-image">
+                            <img src="images/Inicio/Selección de Ingredientes.jpg" alt="Selección de ingredientes" class="process-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-step" id="step-2">
+                    <div class="step-info">
+                        <div class="step-text">
+                            <h3>Elaboración Artesanal</h3>
+                            <p>Cada producto es elaborado a mano por nuestros expertos panaderos, siguiendo recetas tradicionales transmitidas de generación en generación. La masa madre natural y los procesos de fermentación lenta son el secreto de nuestro sabor inigualable. Cada pieza recibe atención personalizada para garantizar la perfección en cada bocado.</p>
+                            <ul class="step-features">
+                                <li><i class="fas fa-check"></i> Elaboración 100% artesanal</li>
+                                <li><i class="fas fa-check"></i> Recetas tradicionales</li>
+                                <li><i class="fas fa-check"></i> Fermentación lenta</li>
+                                <li><i class="fas fa-check"></i> Sin conservantes ni aditivos</li>
+                            </ul>
+                        </div>
+                        <div class="step-image">
+                            <img src="images/Inicio/Elaboración Artesanal.jpg" alt="Elaboración artesanal" class="process-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="process-step" id="step-3">
+                    <div class="step-info">
+                        <div class="step-text">
+                            <h3>Horneado y Presentación</h3>
+                            <p>Nuestros productos se hornean a la temperatura exacta para lograr el punto de cocción perfecto. El resultado: una corteza dorada y crujiente con un interior esponjoso y lleno de sabor. Cada pieza es cuidadosamente empacada para mantener su frescura y presentada con el mismo cariño con que fue elaborada.</p>
+                            <ul class="step-features">
+                                <li><i class="fas fa-check"></i> Horneado al momento</li>
+                                <li><i class="fas fa-check"></i> Control de temperatura preciso</li>
+                                <li><i class="fas fa-check"></i> Presentación impecable</li>
+                                <li><i class="fas fa-check"></i> Empaque ecológico</li>
+                            </ul>
+                        </div>
+                        <div class="step-image">
+                            <img src="images/Inicio/Horneado y Presentación.jpg" alt="Productos horneados" class="process-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-cta">
+                <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20productos" class="cta-button" target="_blank">
+                    <i class="fas fa-bread-slice"></i>
+                    Conoce Nuestros Productos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Combos y Promociones -->
+    <section class="combos-promos" id="combos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Combos y Promociones</h2>
+                <p class="section-subtitle">Aprovecha nuestras ofertas especiales para disfrutar de tus productos favoritos</p>
+            </div>
+            <div class="combos-grid">
+                <!-- Fila 1 -->
+                <div class="combo-row">
+                    <!-- Combo 1 -->
+                    <div class="combo-card">
+                        <div class="combo-tag">MÁS VENDIDO</div>
+                        <div class="combo-img-container">
+                            <img src="images/Inicio/Desayuno Familiar.jpg" alt="Desayuno Familiar" class="combo-img">
+                        </div>
+                        <div class="combo-content">
+                            <h3>Desayuno Familiar</h3>
+                            <p class="combo-description">Ideal para compartir en familia los fines de semana. Incluye pan recién horneado, mermelada casera, mantequilla, jugo natural y café.</p>
+                            <div class="combo-pricing">
+                                <span class="price">$24.99</span>
+                                <span class="old-price">$32.99</span>
+                                <span class="savings">Ahorras $8.00</span>
+                            </div>
+                            <a href="#" class="combo-cta">Pedir Ahora</a>
+                        </div>
+                    </div>
+
+                    <!-- Combo 2 -->
+                    <div class="combo-card">
+                        <div class="combo-tag">NUEVO</div>
+                        <div class="combo-img-container">
+                            <img src="images/Inicio/Merienda Escolar.jpg" alt="Merienda Escolar" class="combo-img">
+                        </div>
+                        <div class="combo-content">
+                            <h3>Merienda Escolar</h3>
+                            <p class="combo-description">La merienda perfecta para los más pequeños. Incluye sándwich, jugo, fruta y una galleta casera.</p>
+                            <div class="combo-pricing">
+                                <span class="price">$12.99</span>
+                                <span class="old-price">$15.99</span>
+                                <span class="savings">Ahorras $3.00</span>
+                            </div>
+                            <a href="#" class="combo-cta">Pedir Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila 2 -->
+                <div class="combo-row">
+                    <!-- Combo 3 -->
+                    <div class="combo-card">
+                        <div class="combo-tag">OFERTA</div>
+                        <div class="combo-img-container">
+                            <img src="images/Inicio/Kit Cumpleaños.jpg" alt="Kit Cumpleaños" class="combo-img">
+                        </div>
+                        <div class="combo-content">
+                            <h3>Kit Cumpleaños</h3>
+                            <p class="combo-description">Todo lo que necesitas para celebrar. Incluye pastel, cupcakes, galletas decoradas y más para 15 personas.</p>
+                            <div class="combo-pricing">
+                                <span class="price">$49.99</span>
+                                <span class="old-price">$64.99</span>
+                                <span class="savings">Ahorras $15.00</span>
+                            </div>
+                            <a href="#" class="combo-cta">Pedir Ahora</a>
+                        </div>
+                    </div>
+
+                    <!-- Combo 4 -->
+                    <div class="combo-card">
+                        <div class="combo-tag">ESPECIAL</div>
+                        <div class="combo-img-container">
+                            <img src="images/Inicio/Pan semanal.jpg" alt="Pan Semanal" class="combo-img">
+                        </div>
+                        <div class="combo-content">
+                            <h3>Pan Semanal</h3>
+                            <p class="combo-description">Disfruta de pan fresco todos los días. Incluye variedad de panes para toda la semana más mermelada de regalo.</p>
+                            <div class="combo-pricing">
+                                <span class="price">$18.99</span>
+                                <span class="old-price">$24.99</span>
+                                <span class="savings">Ahorras $6.00</span>
+                            </div>
+                            <a href="#" class="combo-cta">Pedir Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="combos-cta">
+                <h2 class="cta-title">¿Quieres más información sobre nuestros combos?</h2>
+                <p class="cta-subtitle">Contáctanos y te ayudaremos a elegir la mejor opción para ti.</p>
+                <a href="https://wa.me/593996976759?text=Hola,%20me%20interesa%20saber%20más%20sobre%20sus%20combos%20y%20promociones" class="cta-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Consultar Promociones
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section (cargada dinámicamente) -->
+    <section class="contacto" id="contacto-container"></section>
+
+    <!-- Footer (cargado dinámicamente) -->
+    <footer class="footer" id="footer-container"></footer>
+
+    <div id="contact-widget-container"></div>
+    <!-- Scripts -->
+    <script src="/js/component-loader.js"></script>
+    <script>
+        // Cargar componentes y luego ejecutar el script principal
+        document.addEventListener("DOMContentLoaded", () => {
+            // Cargar componentes principales
+            Promise.all([
+                loadComponent('components/header.html', 'header-container'),
+                loadComponent('components/footer.html', 'footer-container'),
+                loadComponent('components/testimonios.html', 'testimonios-container'),
+                loadComponent('components/formulario_contacto.html', 'contacto-container'),
+                loadComponent('components/contact-widget.html', 'contact-widget-container')
+            ]).then(() => {
+                console.log('Todos los componentes se cargaron correctamente');
+                
+                // Cargar el script principal después de que los componentes estén listos
+                const mainScript = document.createElement('script');
+                mainScript.src = '/js/script.js';
+                mainScript.onload = function() {
+                    console.log('Script principal cargado correctamente');
+                    // Inicializar cualquier función necesaria después de cargar el script
+                    if (window.initializeApp) {
+                        window.initializeApp();
+                    }
+                };
+                mainScript.onerror = function() {
+                    console.error('Error al cargar el script principal');
+                };
+                document.body.appendChild(mainScript);
+            }).catch(error => {
+                console.error('Error al cargar componentes:', error);
+            });
+        });
+    </script>
+</body>
+</html>

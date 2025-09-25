@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Bebidas y Acompañamientos - El Dicho Panadería",
+  "metaDescription": "Descubre nuestra selección de bebidas calientes, frías y acompañamientos perfectos para complementar tus panes y postres. Café, chocolate, jugos y más.",
+  "hero": {
+    "title": "El Acompañamiento Perfecto",
+    "subtitle": "Bebidas deliciosas que realzan el sabor de tus panes y postres favoritos.",
+    "backgroundImage": "/images/Bebidas/hero.jpg"
+  },
+  "details": {
+    "mainImage": "/images/Bebidas/Bebidas1.jpg",
+    "thumbnails": [
+      "/images/Bebidas/Bebidas1.jpg",
+      "/images/Bebidas/Bebidas 2.jpg",
+      "/images/Bebidas/Bebidas 3.jpg",
+      "/images/Bebidas/Bebidas 4.jpg",
+      "/images/Bebidas/Bebidas 5.jpg"
+    ],
+    "title": "Sabores que Complementan",
+    "paragraphs": [
+      "Nuestra selección de bebidas y acompañamientos está cuidadosamente elegida para crear la combinación perfecta con nuestros panes y postres. Desde un café recién hecho hasta un chocolate caliente espumoso, cada bebida es preparada con ingredientes de la más alta calidad.",
+      "Ofrecemos opciones para todos los gustos: calientes, frías, dulces o refrescantes. El complemento ideal para disfrutar al máximo de tu visita a nuestra panadería."
+    ],
+    "ctaText": "Hola, me gustaría más información sobre sus Bebidas y Acompañamientos."
+  },
+  "features": [
+    {
+      "icon": "fas fa-coffee",
+      "title": "Café de Especialidad",
+      "description": "Disfruta de nuestro café de grano 100% arábica, tostado artesanalmente para ofrecerte una taza con aromas y sabores excepcionales."
+    },
+    {
+      "icon": "fas fa-mug-hot",
+      "title": "Chocolate Artesanal",
+      "description": "Nuestro chocolate caliente es una experiencia en sí mismo, preparado con chocolate de alta calidad y leche fresca."
+    },
+    {
+      "icon": "fas fa-glass-whiskey",
+      "title": "Jugos Naturales",
+      "description": "Refréscate con nuestros jugos naturales recién exprimidos, preparados al momento con frutas frescas de temporada."
+    }
+  ]
+}

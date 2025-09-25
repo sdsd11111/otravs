@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad - Confecciones Arévalo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/producto.css"> <!-- Reutilizamos algunos estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .legal-content { padding: 8rem 1rem 4rem 1rem; max-width: 900px; margin: 0 auto; line-height: 1.8; }
+        .legal-content h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 2rem; }
+        .legal-content h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-top: 3rem; margin-bottom: 1rem; }
+        .legal-content p, .legal-content ul { margin-bottom: 1.5rem; }
+        .legal-content ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <header class="header" id="header-container"></header>
+
+    <main>
+        <div class="legal-content">
+            <h1>Políticas de Privacidad</h1>
+            <p><strong>Última actualización:</strong> 21 de septiembre de 2025</p>
+
+            <h2>1. Introducción</h2>
+            <p>Bienvenido a Confecciones Arévalo. Respetamos su privacidad y estamos comprometidos a proteger sus datos personales. Esta política de privacidad le informará sobre cómo cuidamos sus datos personales cuando visita nuestro sitio web (independientemente de dónde lo visite) y le informará sobre sus derechos de privacidad y cómo la ley lo protege.</p>
+
+            <h2>2. Datos que recopilamos sobre usted</h2>
+            <p>Podemos recopilar, usar, almacenar y transferir diferentes tipos de datos personales sobre usted, que hemos agrupado de la siguiente manera:</p>
+            <ul>
+                <li><strong>Datos de identidad:</strong> incluyen nombre, apellido, nombre de usuario o identificador similar.</li>
+                <li><strong>Datos de contacto:</strong> incluyen dirección de correo electrónico y números de teléfono.</li>
+                <li><strong>Datos técnicos:</strong> incluyen la dirección del protocolo de Internet (IP), sus datos de inicio de sesión, el tipo y la versión del navegador, la configuración y ubicación de la zona horaria, los tipos y versiones de los complementos del navegador, el sistema operativo y la plataforma, y otra tecnología en los dispositivos que utiliza para acceder a este sitio web.</li>
+            </ul>
+
+            <h2>3. Cómo usamos sus datos personales</h2>
+            <p>Usaremos sus datos personales solo cuando la ley nos lo permita. Generalmente, usaremos sus datos personales en las siguientes circunstancias:</p>
+            <ul>
+                <li>Para registrarlo como nuevo cliente.</li>
+                <li>Para gestionar nuestra relación con usted, lo que incluirá notificarle sobre cambios en nuestros términos o política de privacidad.</li>
+                <li>Para administrar y proteger nuestro negocio y este sitio web (incluida la resolución de problemas, el análisis de datos, las pruebas, el mantenimiento del sistema, el soporte, la generación de informes y el alojamiento de datos).</li>
+            </ul>
+
+            <h2>4. Seguridad de los datos</h2>
+            <p>Hemos implementado medidas de seguridad adecuadas para evitar que sus datos personales se pierdan, usen o accedan de forma accidental de manera no autorizada, se alteren o se divulguen. Además, limitamos el acceso a sus datos personales a aquellos empleados, agentes, contratistas y otros terceros que tienen una necesidad comercial de conocerlos.</p>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer-container"></footer>
+
+    <script src="js/component-loader.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadComponent('header.html', 'header-container');
+            await loadComponent('footer.html', 'footer-container');
+            const mainScript = document.createElement('script');
+            mainScript.src = 'js/script.js';
+            document.body.appendChild(mainScript);
+        });
+    </script>
+</body>
+</html>

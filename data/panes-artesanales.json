@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Panes Artesanales - El Dicho Panadería",
+  "metaDescription": "Descubre la auténtica tradición panadera con nuestros panes artesanales. Elaborados con ingredientes naturales y siguiendo recetas tradicionales.",
+  "hero": {
+    "title": "Panes Artesanales: Sabor y Tradición",
+    "subtitle": "Cada pieza es el resultado de años de experiencia y dedicación a la panadería artesanal.",
+    "backgroundImage": "images/panes artesanales/hero.jpg"
+  },
+  "details": {
+    "mainImage": "/images/panes artesanales/panes artesanales 1.jpg",
+    "thumbnails": [
+      "/images/panes artesanales/panes artesanales 1.jpg",
+      "/images/panes artesanales/panes artesanales 2.jpg",
+      "/images/panes artesanales/panes artesanales 3.jpg",
+      "/images/panes artesanales/panes artesanales 4.jpg",
+      "/images/panes artesanales/panes artesanales 5.jpg"
+    ],
+    "title": "El Auténtico Pan Artesanal",
+    "paragraphs": [
+      "Nuestros panes artesanales son el resultado de un proceso de elaboración tradicional que respeta los tiempos naturales de fermentación. Utilizamos ingredientes de la más alta calidad y técnicas ancestrales para ofrecerte un producto con sabor, textura y aroma inigualables.",
+      "Desde el amasado manual hasta el horneado en nuestro horno de leña, cada paso del proceso está cuidadosamente supervisado para garantizar la máxima calidad en cada pieza que llega a tu mesa."
+    ],
+    "ctaText": "Hola, me interesa saber más sobre sus Panes Artesanales."
+  },
+  "features": [
+    {
+      "icon": "fas fa-bread-slice",
+      "title": "Ingredientes Naturales",
+      "description": "Utilizamos únicamente ingredientes naturales, sin conservantes ni aditivos artificiales, para ofrecerte un pan saludable y delicioso."
+    },
+    {
+      "icon": "fas fa-clock",
+      "title": "Fermentación Lenta",
+      "description": "Respetamos los tiempos naturales de fermentación para desarrollar sabores complejos y una textura inigualable en cada pieza."
+    },
+    {
+      "icon": "fas fa-fire-alt",
+      "title": "Horneado Tradicional",
+      "description": "Nuestros panes se hornean en horno de leña, lo que les da un sabor y textura únicos que no encontrarás en ningún otro lugar."
+    }
+  ]
+}

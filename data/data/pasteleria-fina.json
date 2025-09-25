@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Pastelería Fina - El Dicho Panadería",
+  "metaDescription": "Descubre nuestra exquisita selección de pasteles y postres finos. Elaborados con ingredientes premium y técnicas tradicionales para endulzar tus momentos especiales.",
+  "hero": {
+    "title": "Pastelería Fina de Autor",
+    "subtitle": "Delicadas creaciones que combinan tradición e innovación en cada bocado.",
+    "backgroundImage": "/images/Pasteleria fina/hero.jpg"
+  },
+  "details": {
+    "mainImage": "/images/Pasteleria fina/pasteleria fina 1.jpg",
+    "thumbnails": [
+      "/images/Pasteleria fina/pasteleria fina 1.jpg",
+      "/images/Pasteleria fina/pasteleria fina 2.jpg",
+      "/images/Pasteleria fina/pasteleria fina 3.jpg",
+      "/images/Pasteleria fina/pasteleria fina 4.jpg",
+      "/images/Pasteleria fina/pasteleria fina 5.jpg"
+    ],
+    "title": "Arte Dulce en Cada Porción",
+    "paragraphs": [
+      "Nuestra pastelería fina es el resultado de una cuidadosa selección de ingredientes premium y técnicas de repostería que respetan las recetas tradicionales mientras incorporamos toques innovadores. Cada postre es una obra maestra de sabores y texturas.",
+      "Desde clásicos atemporales hasta creaciones exclusivas, nuestros pasteles y postres son el complemento perfecto para celebrar momentos especiales o simplemente para consentirte con un capricho dulce."
+    ],
+    "ctaText": "Hola, me interesa conocer más sobre su Pastelería Fina y hacer un pedido."
+  },
+  "features": [
+    {
+      "icon": "fas fa-award",
+      "title": "Ingredientes Premium",
+      "description": "Utilizamos solo los mejores ingredientes: chocolate belga, frutas frescas de temporada y productos naturales de la más alta calidad."
+    },
+    {
+      "icon": "fas fa-heart",
+      "title": "Elaboración Artesanal",
+      "description": "Cada postre es preparado a mano por nuestros pasteleros expertos, garantizando frescura y calidad en cada bocado."
+    },
+    {
+      "icon": "fas fa-birthday-cake",
+      "title": "Personalización",
+      "description": "Ofrecemos opciones personalizadas para eventos especiales, adaptándonos a tus necesidades y preferencias."
+    }
+  ]
+}
