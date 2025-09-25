@@ -2,25 +2,13 @@
   "version": 2,
   "builds": [
     {
-      "src": "**/*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "**/*.{json,jpg,jpeg,png,gif,ico,svg,webp}",
+      "src": "**/*.@(html|js|css|json|jpg|jpeg|png|gif|ico|svg|webp)",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/([^\\/]+\\.[^\\/]+)$",
+      "src": "/([^/]+\\.[^/]+)$",
       "dest": "/$1"
     },
     {
