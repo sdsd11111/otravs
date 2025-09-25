@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "**/*.@(html|js|css|json|jpg|jpeg|png|gif|ico|svg|webp)",
+      "src": "**/*.{html,js,css,json,jpg,jpeg,png,gif,ico,svg,webp}",
       "use": "@vercel/static"
     }
   ],
@@ -12,35 +12,35 @@
       "dest": "/$1"
     },
     {
-      "src": "^/pan-dulce-tradicional/?$",
+      "src": "^/pan-dulce-tradicional(?:/|$)",
       "dest": "/pan-dulce-tradicional.html"
     },
     {
-      "src": "^/pasteleria-fina/?$",
+      "src": "^/pasteleria-fina(?:/|$)",
       "dest": "/pasteleria-fina.html"
     },
     {
-      "src": "^/bebidas-acompanamientos/?$",
+      "src": "^/bebidas-acompanamientos(?:/|$)",
       "dest": "/bebidas-acompanamientos.html"
     },
     {
-      "src": "^/especiales-temporada/?$",
+      "src": "^/especiales-temporada(?:/|$)",
       "dest": "/especiales-temporada.html"
     },
     {
-      "src": "^/sobre-nosotros/?$",
+      "src": "^/sobre-nosotros(?:/|$)",
       "dest": "/sobre-nosotros.html"
     },
     {
-      "src": "^/panes-artesanales/?$",
+      "src": "^/panes-artesanales(?:/|$)",
       "dest": "/panes-artesanales.html"
     },
     {
-      "src": "^/cookies/?$",
+      "src": "^/cookies(?:/|$)",
       "dest": "/cookies.html"
     },
     {
-      "src": "^/index\\.html$",
+      "src": "/index.html",
       "status": 301,
       "headers": { "Location": "/" }
     },
